@@ -4,14 +4,14 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
   const { limit, offset } = req.query;
-  if(limit && offset){
+  if (limit && offset) {
     res.json({
       limit,
-      offset
+      offset,
     });
   } else {
-    res.send('No parameters sent.')
+    res.send('No parameters sent.');
   }
-})
+});
 
-module.exports = router
+module.exports = router;

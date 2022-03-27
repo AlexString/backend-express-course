@@ -4,12 +4,10 @@ const router = express.Router();
 
 router.get('/:categoryId/products/:productId', (req, res) => {
   const { categoryId, productId } = req.params;
-  res.json(
-    {
-      categoryId,
-      productId,
-    }
-  );
+  res.json({
+    categoryId,
+    productId,
+  });
 });
 
-module.exports = router
+module.exports = router;
